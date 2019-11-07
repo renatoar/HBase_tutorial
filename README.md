@@ -57,7 +57,7 @@ O HBase roda no Hadoop, que é uma plataforma de software em Java de computaçã
 <li>Manter informações de configuração</li>
 <li>Fornece nós efêmeros, que representam servidores de região diferentes.</li>
 </ul>
-<p><img src="https://www.researchgate.net/profile/Prateek_Nima/publication/330837495/figure/fig1/AS:722050708692993@1549161712839/HBase-Architecture-A4Academics-2016.ppm" alt=""></p>
+<p><img src="https://s3.amazonaws.com/files.dezyre.com/images/blog/Overview+of+HBase+Architecture+and+its+Components/HBase+Architecture.jpg" alt=""></p>
 <h2 id="propriedades">Propriedades</h2>
 <p>[7] O HBase não é um banco de dados compatível com transações ACID. No entanto, garante certas propriedades específicas de Atomicidade, Consistência, Isolamento e Durabilidade.</p>
 <h3 id="atomicidade">Atomicidade</h3>
@@ -211,17 +211,19 @@ $ sudo ./cloudera-manager-installer.bin
 <pre><code>$ create ‘&lt;nome da tabela&gt;’,’&lt;família de colunas&gt;’
 </code></pre>
 <h3 id="passo-3-inserir-valores-nas-colunas-da-tabela">Passo 3: Inserir valores nas colunas da tabela</h3>
+<pre><code>put ‘&lt;nome da tabela&gt;’, ‘&lt;row key&gt;’, ‘&lt;familia de colunas:coluna&gt;’, ‘&lt;valor&gt;’
+</code></pre>
 <h2 id="exercícios">Exercícios</h2>
+<p>1 - Conecte no HBase via Hbase Shell.</p>
+<p>2 - Crie uma tabela para Funcionários de uma empresa. Esse funcionário terá dados pessoais e dados profissionais (Dica: Famílias de Colunas).</p>
+<p>3 - Popule esta tabela com informações de 3 funcionários.</p>
+<p>a.)  Um gerente, de 28 anos, chamado Roberto Ramos, do departamento de TI, com salário de R$1000.</p>
+<p>b.) Um recepcionista, do departamento de Administração, com salário de R$500, 23 anos, chamado Marcos Souza.</p>
+<p>c.) Uma supervisora, do departamento de Compras, 30 anos, salário de R$1500, chamada Celina Mendes.</p>
+<p>4 - Retorne todos os dados da tabela de funcionários.</p>
+<p>5 - Retorne os dados do recepcionista.</p>
+<p>6 - Desligue uma das VMs (slave1, slave2 ou slave3) e verifique se ainda tem acesso aos dados.</p>
+<p>7 - Desligue outra das VMs e verifique se, com a última restante, ainda tem acesso aos dados.</p>
+<p>8 - Religue as outras duas VMs.</p>
+<p>9 - Apague a tabela de funcionários</p>
 
-1 - Conecte no HBase via Hbase Shell.
-2 - Crie uma tabela para Funcionários de uma empresa. Esse funcionário terá dados pessoais e dados profissionais (Dica: Famílias de Colunas).
-3 - Popule esta tabela com informações de 3 funcionários.
-Um gerente, de 28 anos, chamado Roberto Ramos, do departamento de TI, com salário de R$1000.
-Um recepcionista, do departamento de Administração, com salário de R$500,  23 anos, chamado Marcos Souza.
-Uma supervisora, do departamento de Compras, 30 anos, salário de R$1500, chamada Celina Mendes.
-4 - Retorne todos os dados da tabela de funcionários.
-5 - Retorne os dados do recepcionista.
-6 - Desligue uma das VMs (slave1, slave2 ou slave3) e verifique se ainda tem acesso aos dados.
-7 - Desligue outra das VMs e verifique se, com a última restante, ainda tem acesso aos dados.
-8 - Religue as outras duas VMs.
-9 - Apague a tabela de funcionários
