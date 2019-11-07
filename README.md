@@ -57,7 +57,7 @@ O HBase roda no Hadoop, que é uma plataforma de software em Java de computaçã
 <li>Manter informações de configuração</li>
 <li>Fornece nós efêmeros, que representam servidores de região diferentes.</li>
 </ul>
-<p><img src="https://s3.amazonaws.com/files.dezyre.com/images/blog/Overview+of+HBase+Architecture+and+its+Components/HBase+Architecture.jpg" alt=""></p>
+<p><img src="https://www.researchgate.net/profile/Prateek_Nima/publication/330837495/figure/fig1/AS:722050708692993@1549161712839/HBase-Architecture-A4Academics-2016.ppm" alt=""></p>
 <h2 id="propriedades">Propriedades</h2>
 <p>[7] O HBase não é um banco de dados compatível com transações ACID. No entanto, garante certas propriedades específicas de Atomicidade, Consistência, Isolamento e Durabilidade.</p>
 <h3 id="atomicidade">Atomicidade</h3>
