@@ -213,3 +213,15 @@ $ sudo ./cloudera-manager-installer.bin
 <h3 id="passo-3-inserir-valores-nas-colunas-da-tabela">Passo 3: Inserir valores nas colunas da tabela</h3>
 <h2 id="exercícios">Exercícios</h2>
 
+1 - Conecte no HBase via Hbase Shell.
+2 - Crie uma tabela para Funcionários de uma empresa. Esse funcionário terá dados pessoais e dados profissionais (Dica: Famílias de Colunas).
+3 - Popule esta tabela com informações de 3 funcionários.
+Um gerente, de 28 anos, chamado Roberto Ramos, do departamento de TI, com salário de R$1000.
+Um recepcionista, do departamento de Administração, com salário de R$500,  23 anos, chamado Marcos Souza.
+Uma supervisora, do departamento de Compras, 30 anos, salário de R$1500, chamada Celina Mendes.
+4 - Retorne todos os dados da tabela de funcionários.
+5 - Retorne os dados do recepcionista.
+6 - Desligue uma das VMs (slave1, slave2 ou slave3) e verifique se ainda tem acesso aos dados.
+7 - Desligue outra das VMs e verifique se, com a última restante, ainda tem acesso aos dados.
+8 - Religue as outras duas VMs.
+9 - Apague a tabela de funcionários
